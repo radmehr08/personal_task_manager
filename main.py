@@ -1,6 +1,8 @@
+from tasks import tasks
+
+
 name = input("What's your name? ")
 print("Welcome " + name)
-tasks = []
 while True:
     user_tasks = input("Put a task : ")
     tasks.append(user_tasks)
