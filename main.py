@@ -1,9 +1,12 @@
 from tasks import tasks
 
-
-name = input("What's your name? ")
+name = input("what is your name? ")
 print("Welcome " + name)
 while True:
-    user_tasks = input("Put a task : ")
-    tasks.append(user_tasks)
-    print(f"Your first task is {user_tasks}")
+    user_tasks = input("put a task: ")
+    if user_tasks == "done":
+        with open("tasks.txt", "a") as file:
+            file.write(f"{name} = {tasks}\n")
+            break
+    tasks.append (user_tasks)
+    print(f"your tasks are {tasks}")
