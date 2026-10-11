@@ -44,12 +44,12 @@ A simple Python task manager that you could put your tasks in it.
 ```text
 personal_task_manager/
 
+│   main.py
 │   .env.example
 │   .gitignore
-│   main.py
-│   tasks.py
 │   README.md
 │   requirements.txt
+│   tasks.py
 │
 ├───gifs
 │       task_demo.gif
@@ -170,6 +170,7 @@ Task added!
 * [x] List tasks
 * [x] Save tasks
 * [x] Add admin mode
+* [x] Add priority level for tasks
 * [ ] Add delete function
 * [ ] Add edit function
 * [ ] Add priority
